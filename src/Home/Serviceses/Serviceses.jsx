@@ -5,7 +5,7 @@ import Service from "../Service/Service";
 const Serviceses = () => {
     const [sixdata,setSixdata]=useState([]);
     useEffect(() => {
-        fetch('service.json')
+        fetch('http://localhost:3000/service')
             .then((res) => res.json())
             .then((data) => setSixdata(data))
             .catch((error) => console.error(error));
