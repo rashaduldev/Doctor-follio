@@ -9,6 +9,7 @@ import Root from './Root/Root';
 import Home from './Home/Home';
 import Login from './Components/Login/Login';
 import Checkout from './Components/Checkout/Checkout';
+import Signup from './Components/Signup/Signup';
 
 const router = createBrowserRouter([
   {
@@ -22,6 +23,10 @@ const router = createBrowserRouter([
       {
         path:"/login",
         element:<Login></Login>
+      },
+      {
+        path:"/signup",
+        element:<Signup></Signup>
       },
       {
         path:"/checkout/:id",
