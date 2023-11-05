@@ -22,7 +22,8 @@ const Checkout = () => {
       CustomerName:name,
       date,
       email,
-      img
+      img,
+      price
        
     }
     console.log(booking)

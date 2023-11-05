@@ -12,6 +12,7 @@ import Checkout from './Components/Checkout/Checkout';
 import Signup from './Components/Signup/Signup';
 import Authprovider from './Provider/Authprovider';
 import Bookings from './Bookings/Bookings';
+import Privetroute from './Routes/Privetroute';
 
 const router = createBrowserRouter([
   {
@@ -32,7 +33,9 @@ const router = createBrowserRouter([
       },
       {
         path:"/booking",
-        element:<Bookings></Bookings>
+        element:<Privetroute>
+          <Bookings></Bookings>
+        </Privetroute>
       },
       {
         path:"/checkout/:id",
